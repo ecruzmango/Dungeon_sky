@@ -18,7 +18,7 @@ Dungeon in the Sky is a hand-crafted pixel-art boss battle game with cutscenes, 
 | Platform | File |
 |----------|------|
 | Windows | [DungeonInTheSky-Windows.zip](https://github.com/ecruzmango/Dungeons_in_the_Sky/releases/download/v1.0.1/Dungeon.in.the.Sky.Windows.zip) |
-| macOS   | [DungeonInTheSky-Mac.zip](https://github.com/yourusername/dungeon-in-the-sky/releases/download/v1.0.0/DungeonInTheSky-Mac.zip) |
+| macOS   | [DungeonInTheSky-Mac.zip](https://github.com/ecruzmango/Dungeons_in_the_Sky/releases/download/v1.0.0/Dungeon_in_the_Sky_MacOs.zip) |
 
 > Just unzip and run.
 > 
