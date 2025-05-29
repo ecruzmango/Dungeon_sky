@@ -1,0 +1,17 @@
+witch_throw:
+It currently has 18 frames and each frame is 320X320. It does not shoot any projectiles since I dont know 
+if should animate projectiles or leave them as a png. 
+I also need to come up for concecpts for the projectiles.
+
+witch_punch:
+34 frames and each frame is 320X320. I didnt implement the fumes because I dont know what the right range should be. 
+The fumes would also not be able to fit in witch_punch since its constricted by a 32 byt 32 frame window. I would have to make another file called fumes.png. I plan to do so in the future.
+
+witch_walk:
+28 frames and each frame is 320X320. It only walks for a moment and sits back down to attack or throw magic and then gets back up. 
+
+witch_broom:
+5 frames and each frame is 320X320
+
+magic:
+It is a projectile for the witch but it starts from the lower left corner and ends on the top right corner.
