@@ -2,6 +2,7 @@ import os # Used for file path management (load animation files)
 import pygame
 from sound_effects.user.user_sound import SoundManager
 import cv2
+from headers.utils import load_sprite_frames
 # import cv2
 import numpy as np
 #from ..sprites import *
@@ -81,40 +82,40 @@ class Player:
 
         # Load idle animation frames with cropping
         sprite_sheet_path = os.path.join(project_root, "animations", "user", "user_idle.png")
-        self.idle_animation_frames = self.load_frames(sprite_sheet_path, 10, 160, 160)
+        self.idle_animation_frames = load_sprite_frames(sprite_sheet_path, 10, 160, 160)
 
         # Load walking animation frames
         walk_sprite_sheet_path = os.path.join(project_root, "animations", "user", "user_walk.png")
-        self.walk_animation_frames = self.load_frames(walk_sprite_sheet_path, 8, 160, 160)
+        self.walk_animation_frames = load_sprite_frames(walk_sprite_sheet_path, 8, 160, 160)
 
         # Load jumping animation frames
         jump_sprite_sheet_path = os.path.join(project_root, "animations", "user", "user_jump.png")
-        self.jump_animation_frames = self.load_frames(jump_sprite_sheet_path, 7, 160, 160)
+        self.jump_animation_frames = load_sprite_frames(jump_sprite_sheet_path, 7, 160, 160)
 
         # Load fall animation frames
         fall_sprite_sheet_path = os.path.join(project_root, "animations", "user", "user_fall.png")
-        self.fall_animation_frames = self.load_frames(fall_sprite_sheet_path, 5, 160, 160)
+        self.fall_animation_frames = load_sprite_frames(fall_sprite_sheet_path, 5, 160, 160)
 
         # Load dashing animation frames
         dash_sprite_sheet_path = os.path.join(project_root, "animations", "user", "user_dash.png")
-        self.dash_animation_frames = self.load_frames(dash_sprite_sheet_path, 13, 160, 160)
+        self.dash_animation_frames = load_sprite_frames(dash_sprite_sheet_path, 13, 160, 160)
 
         # Load attacking animation frames
         attack_sprite_sheet_path = os.path.join(project_root, "animations", "user", "user_attack.png")
-        self.attack_animation_frames = self.load_frames(attack_sprite_sheet_path, 9, 160, 160)
+        self.attack_animation_frames = load_sprite_frames(attack_sprite_sheet_path, 9, 160, 160)
 
         # ! Load curse animation frames
         curse_idle_path = os.path.join(project_root, "animations", "user", "curse_idle.png")
-        self.curse_idle_frames = self.load_frames(curse_idle_path, 10, 160, 160)
+        self.curse_idle_frames = load_sprite_frames(curse_idle_path, 10, 160, 160)
         
         curse_walk_path = os.path.join(project_root, "animations", "user", "curse_walk.png")
-        self.curse_walk_frames = self.load_frames(curse_walk_path, 8, 160, 160)
+        self.curse_walk_frames = load_sprite_frames(curse_walk_path, 8, 160, 160)
         
         curse_jump_path = os.path.join(project_root, "animations", "user", "curse_jump.png")
-        self.curse_jump_frames = self.load_frames(curse_jump_path, 7, 160, 160)
+        self.curse_jump_frames = load_sprite_frames(curse_jump_path, 7, 160, 160)
         
         curse_fall_path = os.path.join(project_root, "animations", "user", "curse_fall.png")
-        self.curse_fall_frames = self.load_frames(curse_fall_path, 1, 160, 160)
+        self.curse_fall_frames = load_sprite_frames(curse_fall_path, 1, 160, 160)
 
         # Curse state variables
         self.is_cursed = False
