@@ -1,0 +1,10 @@
+snake idle and attack:
+both are 20 frames and each frame is 320X320
+
+snake_mine:
+20 frames and each frame is 320X320. 
+water snake and attack:
+2 frames and each frame is 320X320
+
+water pre-attack:
+13 frames and each frame is 320X320
