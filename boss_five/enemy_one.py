@@ -1,6 +1,7 @@
 import pygame
 import os
 from sound_effects.bosses.boss_sound import SoundManager
+from headers.utils import load_sprite_frames
 
 # Screen dimensions
 SCREEN_WIDTH = 1280
@@ -18,7 +19,7 @@ class EnemyOneChess:
         enemy_path = os.path.join(project_root, "animations", "boss_five_ani", "friend.png")
 
         # load the attack animation
-        self.idle_animation_frames = self.load_frames(enemy_path, 10, 160, 160)
+        self.idle_animation_frames = load_sprite_frames(enemy_path, 10, 160, 160)
 
         self.wait_durration = 600
         self.last_attack_time = 0

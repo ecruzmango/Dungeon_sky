@@ -2,6 +2,7 @@ import pygame
 import os
 import random
 from sound_effects.bosses.boss_sound import SoundManager
+from headers.utils import load_sprite_frames
 
 class Cloud:
     def __init__(self, screen, clock, player):
@@ -30,10 +31,10 @@ class Cloud:
         # Setup paths and load sprite sheets
         project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         idle_sprite_sheet_path = os.path.join(project_root, "animations", "boss_five_ani", "cloud.png")
-        self.idle_animation_frames = self.load_frames(idle_sprite_sheet_path, 13, 320, 1440)
+        self.idle_animation_frames = load_sprite_frames(idle_sprite_sheet_path, 13, 320, 1440)
 
         bye_sprite_sheet_path = os.path.join(project_root, "animations", "boss_five_ani", "cloud_stop.png")
-        self.bye_animation_frames = self.load_frames(bye_sprite_sheet_path, 13, 320, 1440)
+        self.bye_animation_frames = load_sprite_frames(bye_sprite_sheet_path, 13, 320, 1440)
 
         # Animation settings
         self.animation_index = 0

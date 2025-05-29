@@ -11,6 +11,7 @@ from .enemy_one import EnemyOneChess
 from .enemy_two import EnemyTwoBeam
 from .cloud import Cloud
 from .blob import Blob
+from headers.utils import load_sprite_frames
 from boss_three.enemy_duck import EnemyDuck
 
 
@@ -128,42 +129,42 @@ class BossFive(Boss):
 
         # Load in the idle animation
         sprite_sheet_path_idle = os.path.join(project_root, "animations", "boss_five_ani", "thunder_idle.png")
-        self.idle_animation_frames = self.load_frames(sprite_sheet_path_idle, 20, 570, 570)
+        self.idle_animation_frames = load_sprite_frames(sprite_sheet_path_idle, 20, 570, 570)
 
         # load in slam animation
         sprite_sheet_path_slam = os.path.join(project_root, "animations", "boss_five_ani", "boss_slam.png")
-        self.slam_animation_frames = self.load_frames(sprite_sheet_path_slam, 16, 570, 570)
+        self.slam_animation_frames =  load_sprite_frames(sprite_sheet_path_slam, 16, 570, 570)
         
         # load in the eye attack animation
         sprite_sheet_path_eye = os.path.join(project_root, "animations", "boss_five_ani", "thunder_eye.png")
-        self.eye_animation_frames = self.load_frames(sprite_sheet_path_eye, 19, 570, 570)
+        self.eye_animation_frames = load_sprite_frames(sprite_sheet_path_eye, 19, 570, 570)
 
         # load in ball animation
         sprite_sheet_path_ball = os.path.join(project_root, "animations", "boss_five_ani", "ball.png")
-        self.ball_animation_frames = self.load_frames(sprite_sheet_path_ball, 10, 180, 180)
+        self.ball_animation_frames = load_sprite_frames(sprite_sheet_path_ball, 10, 180, 180)
 
         # load in projectile throw animation
         sprite_sheet_path_thunder = os.path.join(project_root, "animations", "boss_five_ani", "boss_thunder.png")
-        self.thunder_animation_frames = self.load_frames(sprite_sheet_path_thunder, 28, 570, 570)        
+        self.thunder_animation_frames = load_sprite_frames(sprite_sheet_path_thunder, 28, 570, 570)        
 
         # load in ball thunder(will shoot random projectiles)
         sprite_sheet_path_ThundBall = os.path.join(project_root, "animations", "boss_five_ani", "thunder_ball.png")
-        self.ThundBall_animation_frames = self.load_frames(sprite_sheet_path_ThundBall, 6, 160, 160)
+        self.ThundBall_animation_frames = load_sprite_frames(sprite_sheet_path_ThundBall, 6, 160, 160)
 
         # load in the boss's head
         sprite_sheet_path_ThundHead = os.path.join(project_root, "animations", "boss_five_ani", "thunder_head.png")
-        self.ThundHead_animation_frames = self.load_frames(sprite_sheet_path_ThundHead, 6, 760, 760)
+        self.ThundHead_animation_frames = load_sprite_frames(sprite_sheet_path_ThundHead, 6, 760, 760)
 
         # load in boss falling
         sprite_sheet_path_ThundFall = os.path.join(project_root, "animations", "boss_five_ani", "Boss_falls.png")
-        self.ThundFall_animation_frames = self.load_frames(sprite_sheet_path_ThundFall, 11, 570, 570)
+        self.ThundFall_animation_frames = load_sprite_frames(sprite_sheet_path_ThundFall, 11, 570, 570)
 
         sprite_sheet_path_ThundAppear = os.path.join(project_root, "animations", "boss_five_ani", "Thunder_appear.png")
-        self.ThundAppear_animation_frames = self.load_frames(sprite_sheet_path_ThundAppear, 6, 570, 570)
+        self.ThundAppear_animation_frames = load_sprite_frames(sprite_sheet_path_ThundAppear, 6, 570, 570)
 
         # load in Boss calling
         sprite_sheet_path_ThundCall = os.path.join(project_root, "animations", "boss_five_ani", "Boss_calls.png")
-        self.ThundCall_animation_frames = self.load_frames(sprite_sheet_path_ThundCall, 13, 570, 570)
+        self.ThundCall_animation_frames = load_sprite_frames(sprite_sheet_path_ThundCall, 13, 570, 570)
 
         # load in Boss intro play it in the beginning along with the audio/ also resize it to 1280 by 720
         sprite_sheet_path_ThundIntro = os.path.join(project_root, "animations", "boss_five_ani", "Boss_intro.png")

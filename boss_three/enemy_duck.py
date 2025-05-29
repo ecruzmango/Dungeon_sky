@@ -1,6 +1,7 @@
 import os 
 import pygame
 import random
+from headers.utils import load_sprite_frames
 from sound_effects.bosses.boss_sound import SoundManager
 
 # Screen dimensions
@@ -25,7 +26,7 @@ class EnemyDuck:
 
         
         # load the attack animation for the duck
-        self.duck_frames = self.load_frames(duck_fly_path, 4, 320, 320)
+        self.duck_frames = load_sprite_frames(duck_fly_path, 4, 320, 320)
 
 
         self.current_frame = 0

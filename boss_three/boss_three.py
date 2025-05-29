@@ -5,6 +5,7 @@ import math
 import sys
 from headers.classes import Boss, Projectile, Player, ControllerHandler
 from sound_effects.bosses.boss_sound import SoundManager
+from headers.utils import load_sprite_frames
 # from menu_overlay import level_overlay
 from boss_one import enemy
 from boss_three.enemy_fish import EnemyFish  # Changed to class name
@@ -37,15 +38,15 @@ class BossThree(Boss):
         
         # Load idle animation frames
         sprite_sheet_path = os.path.join(project_root, "animations", "boss_three_ani", "frog_idle.png")
-        self.idle_animation_frames = self.load_frames(sprite_sheet_path, 12, 320, 320)
+        self.idle_animation_frames = load_sprite_frames(sprite_sheet_path, 12, 320, 320)
 
         # Load jump animation frames
         sprite_sheet_path_jump = os.path.join(project_root, "animations", "boss_three_ani", "frog_jump.png")
-        self.jump_animation_frames = self.load_frames(sprite_sheet_path_jump, 26, 320, 320)
+        self.jump_animation_frames = load_sprite_frames(sprite_sheet_path_jump, 26, 320, 320)
 
         #load call animtation frames
         sprite_sheet_path_call = os.path.join(project_root, "animations","boss_three_ani","frog_tongue.png")
-        self.call_animation_frames = self.load_frames(sprite_sheet_path_call,19, 320,320)
+        self.call_animation_frames = load_sprite_frames(sprite_sheet_path_call,19, 320,320)
 
         # Jump animation variables
         self.jump_start_y = 320  # Initial Y position
