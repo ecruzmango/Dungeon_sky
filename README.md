@@ -3,7 +3,7 @@
 **A pixel-art boss battle adventure set high above the clouds.**  
 Face monstrous foes in a forgotten sky cathedral and uncover secrets with every step. Built with Python and Pygame.
 
-![screenshot](assets/screenshots/Profile.png)
+![screenshot](assets/menu/screenshots/Profile.png)
 
 ---
 
