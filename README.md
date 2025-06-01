@@ -45,11 +45,13 @@ Dungeon in the Sky is a hand-crafted pixel-art boss battle game with cutscenes, 
 
 ## Screenshots
 
-> *(You can replace or add your own in `assets/screenshots/`)*
+
 
 | Gameplay | Cutscene |
 |----------|----------|
-| ![](assets/screenshots/screen1.png) | ![](assets/screenshots/screen2.png) |
+| ![](assets/menu/screenshots/screenshot1.png) | ![](assets/menu/screenshots/boss_intro.png) |
+
+
 
 ---
 
