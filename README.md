@@ -56,7 +56,7 @@ Dungeon in the Sky is a hand-crafted pixel-art boss battle game with cutscenes, 
 ## 📄 License
 
 This project is licensed under the **MIT License**.  
-See [`LICENSE`](LICENSE) for more information.
+See [`LICENSE`](LICENSE.md) for more information.
 
 ---
 
