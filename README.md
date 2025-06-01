@@ -38,7 +38,8 @@ Dungeon in the Sky is a hand-crafted pixel-art boss battle game with cutscenes, 
 |--------------|-----------------|
 | Move         | Arrow Keys / WASD |
 | Jump         | Spacebar        |
-| Interact     | Z / Enter       |
+| Dash         | D               |
+| Interact     | E       |
 | Pause        | Esc             |
 
 ---
